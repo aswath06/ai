@@ -38,7 +38,7 @@ def a_star(start, goal):
                 # A* formula: f(n) = g(n) + h(n)
                 new_priority = new_cost + heuristic[neighbour]
                 heapq.heappush(
-                    queue,
+                        queue,
                     (new_priority, new_cost, neighbour, path)
                 )
     print("No path found")
